@@ -1,3 +1,5 @@
+/* Universal setup */
+
 * {
 
 }
@@ -6,7 +8,7 @@ html {
     font-size: 16px;
 }
 
-
+/* header */
 header{
     display: flex;
     justify-content: space-between;
@@ -27,6 +29,24 @@ header nav li a{
     color: black;
 }
 
+/* banner */
+
+main .banner{
+    background-image: url(../images/InnovatechSolutionsCompanyBanner.webp);
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+}
+
+.banner div{
+    text-align: center;
+    background-color: white;
+}
+
+/* general container display */
+
 .container{
     margin: 20px 10px;
 }
@@ -36,6 +56,13 @@ header nav li a{
     padding: 5px;
 }
 
+/* individual */
+
+.display h3{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
 .container h2{
     text-decoration: underline;
     font-weight: bold;
@@ -43,7 +70,8 @@ header nav li a{
     padding-bottom: 10px;
 }
 
-.container .products .display {
+
+.products .display {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
@@ -63,4 +91,13 @@ header nav li a{
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
     margin: 10px auto;
+}
+
+.container .display .title{
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+footer{
+margin: 20px 10px;
 }
