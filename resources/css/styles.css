@@ -1,9 +1,5 @@
 /* Universal setup */
 
-* {
-
-}
-
 html {
     font-size: 16px;
 }
@@ -29,6 +25,18 @@ header nav li a{
     color: black;
 }
 
+@media only screen and (max-width: 425px){
+    header {
+        display: block;
+        justify-items: center;
+    }
+
+    header nav li{
+        display: block;
+        padding: 5px 0px;
+    }
+}
+
 /* banner */
 
 main .banner{
@@ -43,6 +51,7 @@ main .banner{
 .banner div{
     text-align: center;
     background-color: white;
+    padding: 10px;
 }
 
 /* general container display */
@@ -55,6 +64,7 @@ main .banner{
     border: 1px black dashed;
     padding: 5px;
 }
+
 
 /* individual */
 
@@ -98,6 +108,26 @@ main .banner{
     font-style: italic;
 }
 
+@media only screen and (max-width: 425px){
+    .products .display {
+        display: block;
+        justify-items: center;
+        margin: 10px auto;
+    }
+
+    .container .members .display {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        margin: 10px auto;
+    }
+
+}
+
+/* Footer */
+
 footer{
-margin: 20px 10px;
+    margin: 20px 10px;
 }
